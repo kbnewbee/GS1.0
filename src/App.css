@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +14,19 @@
 
 :root{
     --pblue: #6eabfd;
+    --pblue1: #5598f0;
     --pred: rgb(172, 4, 4);
     --pgold: rgb(201, 149, 19);
+    --pbg: #e9eaed;
+    --pwhite: whitesmoke;
+    --pdblue: rgb(3, 3, 97);
+    --pgradient : linear-gradient(to right, #6eabfd 0%,#0f7fc9 15%,
+    rgb(3, 3, 97) 30%, rgb(172, 4, 4) 100%);
 }
 
+body{
+    background: var(--pbg);
+}
 
 /* Hero */
 .defaultHero{
@@ -68,4 +80,89 @@
 
 .btn-prm:hover{
     background: transparent;
+}
+
+/* About */
+.container-about{
+    margin: 20px 30px;
+    /* border: 1px solid black; important */
+}
+
+.card-about{
+    justify-content: center;
+    text-align: center;
+    background: whitesmoke;
+    
+}
+
+.card-about h2{
+    padding: 20px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--pdblue);
+}
+.card-about .sub{
+    font-size: 40px;
+    color: var(--pred);
+    padding-top: 20px;
+    font-family: 'Merienda', cursive;
+    
+}
+.card-about .bar{
+    width: 20rem;
+    height: 3px;
+    background: var(--pgradient);
+    margin: 0rem auto;
+}
+
+.card-about p{
+    margin: 20px 200px;
+    font-size: 18px;
+    color: var(--pdblue);
+    font-weight: 300;
+    padding-bottom: 20px;
+    
+}
+
+.card-artist{
+    
+    background: url("./images/img5.jpg") center/cover no-repeat;
+    min-height: calc(70vh);
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.card-artist h2{
+    
+    font-size: 35px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.card-artist .sub{
+    font-size: 40px;
+    color: var(--pred);
+    padding-top: 20px;
+    font-family: 'Merienda', cursive;
+    
+}
+.card-artist .bar{
+    width: 25rem;
+    height: 3px;
+    background: var(--pgradient);
+    margin: 0rem auto;
+}
+
+.card-artist p{
+    margin: 20px 200px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 300;
+    padding-bottom: 20px;
+    
 }
