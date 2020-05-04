@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Error from './pages/Error'
+import Footer from './components/Footer'
 
 import {Route, Switch} from 'react-router-dom'
 
@@ -20,6 +21,8 @@ function App() {
       <Route exact path = "/login" component ={Login} />
       <Route component = {Error} />
     </Switch>
+    
+    <Footer/>
     
     </>
     

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import artist from '../images/img5.jpg'
+
 
 
 export default class About extends Component {
@@ -21,7 +21,7 @@ export default class About extends Component {
                     <h2>Artists</h2>
                     <div className = "bar"></div>
                     <div className="sub">Soon to launch our Artist Connect</div>
-                    <p>Using our Artist connect, Artists will be able to connect with peers and tet their content online. And the great news 
+                    <p>Using our Artist connect, Artists will be able to connect with peers and test their content online. And the great news 
                         is it's free.</p>
                 </div>
             </div>
