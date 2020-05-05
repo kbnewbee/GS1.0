@@ -17,13 +17,13 @@ function App() {
 
     <Switch>
       <Route exact path = "/" component ={Home} />
-      <Route exact path = "/contact" component ={Contact} />
+      <Route exact path = "/" component ={Contact} />
       <Route exact path = "/login" component ={Login} />
       <Route component = {Error} />
     </Switch>
     
     <Footer/>
-    
+
     </>
     
   );

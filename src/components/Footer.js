@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="footer-content">
 
                 <div className="footer-section about">
-                    {/* logo */}
+                    
                     <div className="footer-logo">
                             <Link to="/"><img src={logo}  alt="Gigsutra" /></Link>
                         </div>

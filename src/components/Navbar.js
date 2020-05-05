@@ -59,11 +59,12 @@ export default function Navbar() {
                 <div className="bottom-nav">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/organisers">Organisers</Link></li>
+                        <li><Link to="/events">Events</Link></li>
                         <li><Link to="/">About Us</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
+                        
+                        {/* <li><Link to="/contact">Contact Us</Link></li> */}
                     </ul>
                 </div>
             </div>

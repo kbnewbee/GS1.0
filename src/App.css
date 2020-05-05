@@ -13,6 +13,8 @@
 }
 
 :root{
+    --pborder: 1px solid black;
+
     --pblue: #6eabfd;
     --pblue1: #5598f0;
     --pred: rgb(172, 4, 4);
@@ -87,7 +89,7 @@ body{
 
 /* About */
 .container-about{
-    margin: 20px 30px;
+    margin: 20px 50px;
     /* border: 1px solid black; important */
 }
 
@@ -104,6 +106,7 @@ body{
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--pdblue);
+    font-weight: 300;
 }
 .card-about .sub{
     font-size: 40px;
@@ -170,6 +173,80 @@ body{
     
 }
 
+.card-solve{
+    /* border: var(--pborder); */
+    margin-top: 20px;
+    background: var(--pwhite);
+}
+
+.card-solve h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--pdblue);
+    font-weight: 300;
+    
+}
+
+.card-solve .bar{
+    width: 40rem;
+    height: 3px;
+    background: var(--pgradient);
+    margin: 0rem auto;
+}
+
+.card-solve .solve1{
+    /* border: var(--pborder); */
+    /* height: 100px; */
+    margin: 20px 20px;
+    display: flex;
+}
+
+.card-solve .solve1 .icon-div{
+    display: inline-block;
+    vertical-align: middle;
+    /* border: var(--pborders); */
+    margin: 20px 20px;
+}
+
+.card-solve .solve1 .icon-div .icon{
+    animation: icon-spin infinite 4s linear;
+}
+
+@keyframes icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.card-solve .solve1 .text-div{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    /* border: var(--pborder); */
+    color: var(--pdblue);
+    padding: 10px 10px;
+}  
+
+.card-solve .solve1 .text-div h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -23px;
+    margin-top: 25px;
+
+}
+
+.card-solve .solve1 .text-div span{
+    font-size: 18px;
+    font-weight: 300;
+}
+
 /* Footer */
 .footer{
     background: var(--pgery);
@@ -186,12 +263,12 @@ body{
 .footer .footer-content .footer-section{
     flex: 1;
     /* border: 1px solid whitesmoke; */
-    padding: 25px;
+    padding: 25px 50px;
 }
 
 .footer .footer-content .about .footer-logo{
     width: 40%;
-    margin-bottom: -6.75rem;
+    margin-bottom: -6rem;
     margin-left: -0.2rem;
     margin-top: -1.8rem;
 }
