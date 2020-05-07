@@ -10,11 +10,12 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    transition: var(--ptransition);
 }
 
 :root{
     --pborder: 1px solid black;
-
+    --ptransition: all 0.5s ease;
     --pblue: #6eabfd;
     --pblue1: #5598f0;
     --pred: rgb(172, 4, 4);
@@ -140,9 +141,8 @@ body{
 
 }
 
-
 .card-artist h2{
-    
+    font-weight: 300;
     font-size: 35px;
     padding-top: 120px;
     padding-bottom: 30px;
@@ -230,14 +230,14 @@ body{
     vertical-align: middle;
     /* border: var(--pborder); */
     color: var(--pdblue);
-    padding: 10px 10px;
+    /* padding: 10px 0; */
 }  
 
 .card-solve .solve1 .text-div h3{
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: -23px;
+    margin-bottom: -15px;
     margin-top: 25px;
 
 }
@@ -245,6 +245,54 @@ body{
 .card-solve .solve1 .text-div span{
     font-size: 18px;
     font-weight: 300;
+}
+
+@media(max-width: 1100px){
+    .container-about{
+        margin: 20px 20px;
+        transition: var(--ptransition);
+    }
+    .card-about h2{
+        font-size: 30px;
+        transition: var(--ptransition);
+    }
+    .card-about .sub{
+        font-size: 30px;
+        transition: var(--ptransition);
+    }
+    .card-about p{
+        margin: 20px 40px;
+        font-size: 15px;
+        transition: var(--ptransition);
+    }
+
+    .card-artist{
+        min-height: calc(40vh);
+        transition: var(--ptransition);
+    }
+    .card-artist h2{
+        padding-top: 30px;
+        font-size: 30px;
+        transition: var(--ptransition);
+    }
+    .card-artist .sub{
+        font-size: 30px;
+        transition: var(--ptransition);
+    }
+    .card-artist p{
+        margin: 20px 40px;
+        font-size: 15px;
+        transition: var(--ptransition);
+    }
+
+    .card-solve h2{
+        font-size: 30px;
+        transition: var(--ptransition);
+    }
+    .card-solve .solve1 .text-div span{
+        font-size: 15px;
+        transition: var(--ptransition);
+    }
 }
 
 /* Footer */
@@ -283,7 +331,7 @@ body{
     font-weight: 300;
     font-size: 0.7rem;
     margin-bottom: 10px;
-
+    /* height: 0; */
     margin-top: 80px;
 }
 
@@ -392,4 +440,64 @@ body{
     font-weight: 300;
     letter-spacing: .5px;
     /* padding-top: 20px; */
+}
+
+@media(max-width: 1100px){
+    .footer{
+        height: 300px;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content{
+        height: 273px;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .footer-section{
+        padding: 20px 20px;   
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .about .footer-logo{
+        /* margin-bottom: -9rem; */
+        margin-bottom: -160px;
+        margin-top: -25px;
+        transition: var(--ptransition);
+        width: 70%;
+    }
+    .footer .footer-content .about p{
+        font-size: 0.4rem;
+        letter-spacing: 0.8px;
+        transition: var(--ptransition);
+        color: transparent;
+    }
+    .footer .footer-content .about .contact span{
+        font-size: 0.6rem;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .about .socials a{
+        width: 30px;
+        transition: var(--ptransition);
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .footer .footer-content .links ul{
+        margin-top: -15px;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .links ul a{
+        margin-bottom: 8px; 
+        transition: var(--ptransition);   
+    }
+
+    .footer .footer-content .contact-form form{
+        margin-top: -13px;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .contact-form .contact-input{
+        font-size: 12px;
+        padding: 0.4rem 0.5rem;
+        transition: var(--ptransition);
+    }
+    .footer .footer-content .contact-form .contact-btn{
+        float: none;
+        transition: var(--ptransition);
+    }
 }
