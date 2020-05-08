@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    transition: all 1s ease;
     
 }
 .wrapper{
@@ -38,40 +39,6 @@
     display: flex;
     align-items: center;
 }
-
-
-/* .search-bar form{
-    display: flex;
-    
-}
-
-.se-input-active{
-    border: 2px solid rgb(0, 0, 73);
-    border-radius: 10px;
-    width: 250px;
-    transition: width 0.3s ease-in;
-    padding: 5px 10px;    
-}
-.se-input{
-    
-    padding: 5px 0;
-    border: 0;
-    width: 0;
-    
-}
-.se-input:focus{
-    outline: none;
-}
-
-.wrapper .top-nav .left .search-bar .se-icon{
-    color: whitesmoke;
-    cursor: pointer;
-    /* margin-right: 10px; */
-    /* padding-top: 10px ; */
-   
-
-    
-
 
 .wrapper .top-nav .left .search-bar input[type="text"]{
     border: 1px solid rgb(0, 0, 73);
@@ -155,18 +122,62 @@
     color: rgb(8, 8, 104);
 }
 
-@media(max-width: 1100px){
 
+@media(max-width: 1100px){
     .wrapper .top-nav{
         padding: 5px 20px;
         transition: all 0.5s ease;
+        /* display: none; */
     }
     .wrapper .top-nav .left .search-bar{
         display: none;
-        transition: all 0.5s ease;
     }
 
     .bottom-nav{
         padding: 0 50px;
+    }
+}
+
+@media(max-width: 600px){
+    
+
+    .wrapper .top-nav{
+        justify-content: center;
+        /* border: 1px solid whitesmoke; */
+        padding: unset;
+    }
+    .wrapper .top-nav .left{
+        display: flex;
+        
+    }
+    .wrapper .top-nav .left .logo{
+        /* border: 1px solid whitesmoke; */
+        margin: unset;
+    }
+
+    .wrapper .top-nav .left .nav-btn{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: whitesmoke;
+        position: relative; 
+        top: 10%;
+        right: -50px;
+    }
+
+    .wrapper .top-nav .left .nav-icon{
+        font-size: 1.5rem;
+    }
+
+    .wrapper .top-nav .right ul{
+        display: none;
+    }
+
+    .bottom-nav{
+        height: 5px;
+    }
+    .bottom-nav ul{
+        display: none;
     }
 }

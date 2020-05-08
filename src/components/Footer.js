@@ -53,7 +53,7 @@ export default function Footer() {
                         <br/>
                         <button type="submit" class="btn btn-big contact-btn">
                             <i class="fa fa-envelope"></i>
-                            Send
+                            <span>Send</span>
                         </button>
                     </form>
                 </div>

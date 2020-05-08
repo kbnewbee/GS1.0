@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+:root{
+    --pborder: 1px solid black;
+    --ptransition: all 0.5s ease;
+    --pblue: #6eabfd;
+    --pblue1: #5598f0;
+    --pred: rgb(172, 4, 4);
+    --pgold: rgb(201, 149, 19);
+    --pbg: #e9eaed;
+    --pwhite: whitesmoke;
+    --pdblue: rgb(3, 3, 97);
+    --pgery: #3c3c44;
+    --pgradient: linear-gradient(to right, #6eabfd 0%,#0f7fc9 15%,
+    rgb(3, 3, 97) 30%, rgb(172, 4, 4) 100%);
+    --pgradient1: linear-gradient(to right,rgb(4, 0, 54) 10%, rgb(3, 3, 97) 30%, rgb(172, 4, 4) 100%);
+}
+
+@media(max-width: 600px){
+    .navbar{
+        position: fixed;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        /* background: burlywood; */
+        background: url('../images/Bg.png') center no-repeat;
+        /* padding: 10px; */
+        z-index: 1;
+    }
+    .multi-color-border{
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, #6eabfd 10%,#18a1bb 25%,
+        darkblue 50%,#18a1bb 85%, #6eabfd 100%);    
+    }
+        
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+    .nav-header img{
+        width: 50%;
+    }
+        
+    .nav-btn{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: var(--pblue);
+        margin: 10px;
+        /* position: relative;
+        right: 10px; */
+        /* float: right ; */
+    }
+    
+    .nav-icon{
+        font-size: 1.5rem;
+    }
+        
+        .nav-links{
+        overflow: hidden;
+        list-style: none;
+        height: 0;
+        
+        }
+        
+        .nav-links a{
+        display: block ;
+        text-decoration: none;
+        padding: 1.2rem 0;
+        text-align: center;
+        color: var(--pblue);
+        border-bottom: 1px solid var(--pblue1) ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+        
+        .nav-links a:hover{
+        color: var(--pdblue);
+        background: var(--pblue);
+        }
+
+    
+        
+        .show-nav{
+        height: 58vh;
+        }
+        
+        
+}
+  
+ 
